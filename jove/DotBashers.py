@@ -439,13 +439,13 @@ def prDotHeader():
 
 
 def ShowEps(s, visible_eps):
-    """Show Epsilons as '@' in printouts if visible_eps
+    """Show Epsilons as 'ε' in printouts if visible_eps
        is set. Else suppress Epsilons (edges will carry no
        labels then.)
     """
     if (s == ""):
         if visible_eps:
-            return '@'
+            return 'ε'
         else:
             return "''"  # Was @ once upon a time!
     else:
