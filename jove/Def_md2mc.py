@@ -744,8 +744,6 @@ def md2mc(src="None", fname="None"):
     #--
     # Now, based on machine type, return correct machine object.
     #--
-    # ! I'm going to attempt to explicitly state initial and final states
-    # ! as the two lines after machine_type
     (machine_type, (From_s, To_s, G_in, G_out, Q0, F, Sigma, Dirn,
                     Delta)) = rslt
     #--
