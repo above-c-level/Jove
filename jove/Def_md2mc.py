@@ -520,16 +520,15 @@ def find_initial_and_final_states(t, n):
         state = t[n][i]
         # Case where state could be 'I' or 'F'
         if len(state) == 1:
-            print('    Length 1')
             if state.upper() == 'F':
-                final_states.append(i)
+                final_states.append(t[n][i])
             elif state.upper() == 'I':
-                initial_states.append(i)
+                initial_states.append(t[n][i])
         # Case where state could be 'IF'
         elif len(state) == 2:
             if state.upper() == 'IF':
-                initial_states.append(i)
-                final_states.append(i)
+                initial_states.append(t[n][i])
+                final_states.append(t[n][i])
         else:
             # Case where state could be prefixed with IF, F, or I
             # Cut off prefixes
